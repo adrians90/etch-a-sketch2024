@@ -26,10 +26,21 @@ body {
     border: 1px solid black;
     background-color: white;
 }
-
+.title {
+    display: flex;
+    min-height: 20px;
+    min-width: 50px;
+    position: sticky;
+    margin-bottom: 10px;
+}
 .title.text {
     margin: 15px;
     padding: 5px;
+}
+
+.container {
+    margin: 5px;
+    padding: 10px;
 }
 
 .btn-container {
