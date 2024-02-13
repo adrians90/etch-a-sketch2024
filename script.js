@@ -1,6 +1,7 @@
 
 const divContainer = document.querySelector(".container")
-const sizeOfGrid = 16;
+const sizeOfGrid = 26;
+const resetBtn = document.querySelector(".btn-reset")
 
 
 
@@ -26,3 +27,15 @@ function createGrid(amtOfGrids) {
 }
 
 createGrid(sizeOfGrid)
+
+resetBtn.addEventListener("click", () => {
+    let userSize = Number(prompt("Enter new grid dimensions:"))
+
+    if(userSize > 40) {
+        userSize = Number(prompt("Pick a number that is 40 or less:"))
+    }
+
+    const wrapper = document.querySelector(".wrapper")
+    wrapper.remove()
+    createGrid(userSize)
+})
