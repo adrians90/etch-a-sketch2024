@@ -3,9 +3,6 @@ const divContainer = document.querySelector(".container")
 const sizeOfGrid = 16;
 
 
-// const divs = document.createElement("div")
-// divContainer.appendChild(divs)
-
 
 
 function createGrid(amtOfGrids) {
